@@ -1,11 +1,11 @@
 Summary:	VP8, a high-quality video codec
 Name:		libvpx
-Version:	1.2.0
+Version:	1.3.0
 Release:	1
 License:	BSD
 Group:		Libraries
 Source0:	http://webm.googlecode.com/files/%{name}-v%{version}.tar.bz2
-# Source0-md5:	4eab3775d178d44e084525ed978bcd9a
+# Source0-md5:	14783a148872f2d08629ff7c694eb31f
 URL:		http://www.webmproject.org/
 #BuildRequires:	doxygen
 BuildRequires:	yasm
@@ -64,7 +64,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_includedir}/vpx,%{_libdir}}
 	DIST_DIR=$RPM_BUILD_ROOT%{_prefix}	\
 	LIBSUBDIR=%{_lib}
 
-%{__rm} $RPM_BUILD_ROOT%{_libdir}/libvpx.so.1.2
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/libvpx.so.1.3
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -76,6 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS CHANGELOG LICENSE PATENTS README
 %attr(755,root,root) %{_bindir}/vp8_scalable_patterns
+%attr(755,root,root) %{_bindir}/vp9_spatial_scalable_encoder
 %attr(755,root,root) %{_bindir}/vpxdec
 %attr(755,root,root) %{_bindir}/vpxenc
 %attr(755,root,root) %ghost %{_libdir}/libvpx.so.?
