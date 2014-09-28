@@ -1,7 +1,7 @@
 Summary:	VP8, a high-quality video codec
 Name:		libvpx
 Version:	1.3.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries
 Source0:	http://webm.googlecode.com/files/%{name}-v%{version}.tar.bz2
